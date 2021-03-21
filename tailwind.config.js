@@ -16,6 +16,14 @@ module.exports = {
 				'baige': '#D2D2CA',
 				'light-cherry': '#E0CADE',
 			},
+			lineHeight: {
+				'110perc': '110%',
+			},
+			spacing: {
+				'3px': '0.1875rem',
+				'5px': '0.3125rem',
+				'30px': '1.875rem',
+			},
 		},
 	},
 }
