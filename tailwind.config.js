@@ -19,6 +19,9 @@ module.exports = {
 			lineHeight: {
 				'110perc': '110%',
 			},
+			height: {
+				'screen-minus-header': 'calc(100vh - 108px)',
+			},
 			spacing: {
 				'3px': '0.1875rem',
 				'5px': '0.3125rem',
@@ -26,4 +29,9 @@ module.exports = {
 			},
 		},
 	},
+	variants: {
+		extend: {
+			scale: ['group-hover'],
+		}
+	}
 }

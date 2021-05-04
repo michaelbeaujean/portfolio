@@ -4,6 +4,7 @@ import Head from '../components/Head';
 import Logo from '../components/Logo';
 import MyHamburger from '../components/MyHamburger';
 import Menu from '../components/Menu';
+import Intro from '../components/Intro';
 
 function Home() {
 	const [navActive, setNavActive] = useState(false);
@@ -11,9 +12,8 @@ function Home() {
 	return (
 		<PageContext.Provider value={{ navActive, setNavActive }}>
 			<Head title="Michael Beaujean" />
-
 			<nav className="py-7">
-				<div className={`container relative flex justify-between z-10 text-${navActive ? 'dark-grey' : 'white'}`}>
+				<div className={`container relative flex justify-between z-20 text-${navActive ? 'dark-grey' : 'white'}`}>
 					<Logo />
 					<MyHamburger />
 				</div>
@@ -21,11 +21,7 @@ function Home() {
 			</nav>
 
 			<main>
-				<div className="container">
-					<h1>
-						Portfolio
-					</h1>
-				</div>
+				<Intro />
 			</main>
 		</PageContext.Provider>
 	)

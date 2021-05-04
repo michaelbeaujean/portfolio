@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import Link from 'next/link';
 import PageContext from '../context/PageContext';
 import { motion } from 'framer-motion';
 import { menu } from '../data';
@@ -29,9 +28,9 @@ const Menu = () => {
 
 		return (
 			<li className="mb-2" key={i}>
-				<a href={`#${slug}`} className="text-4xl font-bold text-dark-grey uppercase">
+				<a href={`#${slug}`} className="group inline-block text-4xl font-bold text-dark-grey uppercase tracking-tight">
 					{title}
-					<div className="w-full h-2 bg-dark-grey"></div>
+					<div className="w-full h-1 transform scale-x-0 group-hover:scale-x-100 origin-left duration-300 ease-in-out bg-dark-grey"></div>
 				</a>
 			</li>
 		)
@@ -39,7 +38,7 @@ const Menu = () => {
 
 	return (
 		<motion.div
-			className="absolute top-0 left-0 w-full h-0 bg-white transform origin-top flex flex-col justify-center"
+			className="absolute top-0 left-0 w-full h-0 z-10 bg-white transform origin-top flex flex-col justify-center"
 			initial="hidden"
 			animate={navActive ? 'visible' : 'hidden'}
 			variants={variants}
