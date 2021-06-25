@@ -1,6 +1,5 @@
 import * as React from "react";
 import NextHead from "next/head";
-import GoogleFonts from "next-google-fonts";
 
 const Head = ({ children, title }) => (
 	<>
@@ -16,7 +15,7 @@ const Head = ({ children, title }) => (
 
 			{children}
 		</NextHead>
-		<GoogleFonts href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&display=swap" />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&display=swap" rel="stylesheet" />
 	</>
 );
 
