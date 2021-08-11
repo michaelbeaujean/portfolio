@@ -1,3 +1,7 @@
+const remCalc = (px) => {
+	return `${px / 16}rem`;
+};
+
 module.exports = {
 	purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 	theme: {
@@ -16,6 +20,10 @@ module.exports = {
 				'baige': '#D2D2CA',
 				'light-cherry': '#E0CADE',
 			},
+			fontSize: {
+				'15px': remCalc(15),
+				'48px': remCalc(48),
+			},
 			lineHeight: {
 				'110perc': '110%',
 			},
@@ -23,9 +31,17 @@ module.exports = {
 				'screen-minus-header': 'calc(100vh - 108px)',
 			},
 			spacing: {
-				'3px': '0.1875rem',
-				'5px': '0.3125rem',
-				'30px': '1.875rem',
+				'3px': remCalc(3),
+				'5px': remCalc(5),
+				'20px': remCalc(20),
+				'25px': remCalc(25),
+				'30px': remCalc(30),
+				'108px': remCalc(108),
+			},
+			zIndex: {
+				'-1': '-1',
+				'2': '2',
+				'3': '3',
 			},
 		},
 	},
