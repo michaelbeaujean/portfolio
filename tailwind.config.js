@@ -22,6 +22,8 @@ module.exports = {
 			},
 			fontSize: {
 				'15px': remCalc(15),
+				'24px': remCalc(24),
+				'36px': remCalc(36),
 				'48px': remCalc(48),
 			},
 			lineHeight: {

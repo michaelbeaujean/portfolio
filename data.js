@@ -19,6 +19,10 @@ export const work = [
 		stack: 'Gatsby.js, WordPress',
 	},
 	{
+		name: 'Creative Ecosystems',
+		stack: 'JS, CSS, WordPress',
+	},
+	{
 		name: 'OppenheimerFunds / The Future of Global Equity',
 		stack: 'React.js, Highcharts.js, CSS animation',
 	},
