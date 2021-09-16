@@ -7,6 +7,7 @@ import Menu from '../components/Menu';
 import Intro from '../components/Intro';
 import Work from '../components/Work';
 import About from '../components/About';
+import Contact from '../components/Contact';
 
 function Home() {
 	const [navActive, setNavActive] = useState(false);
@@ -27,6 +28,7 @@ function Home() {
 				<Intro />
 				<Work />
 				<About />
+				<Contact />
 			</main>
 		</PageContext.Provider>
 	)

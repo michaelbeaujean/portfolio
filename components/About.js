@@ -13,7 +13,7 @@ const About = () => {
 	};
 
 	return (
-		<section className="relative h-screen flex items-center">
+		<section className="relative h-screen mb-1/2-screen md:mb-0 flex items-center">
 			<Sticker color="light-cherry" width="1/6" height="2/6" pos="start" />
 			<div className="container">
 				<h3 className="xl:pl-108px mb-30px text-36px font-extrabold uppercase underline tracking-tight antialiased">About</h3>

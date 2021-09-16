@@ -22,11 +22,11 @@ export const work = [
 	},
 	{
 		name: 'Creative Ecosystems',
-		stack: 'JS, CSS, WordPress',
+		stack: 'JavaScript, CSS, WordPress',
 	},
 	{
 		name: 'OppenheimerFunds / The Future of Global Equity',
-		stack: 'React.js, Highcharts.js, CSS animation',
+		stack: 'React.js, Highcharts.js, CSS',
 	},
 	{
 		name: 'OppenheimerFunds / 2019 Outlook',
@@ -38,13 +38,32 @@ export const work = [
 	},
 	{
 		name: 'The Wall Street Journal / D.Live',
-		stack: 'JavaScript, WordPress',
+		stack: 'JavaScript, CSS, WordPress',
 	},
 ];
 
 export const about = {
 	bio: [
 		'Michael Beaujean is a web developer and creative technologist based in New York City. Over the last 7+ years, he\'s worked with global brands, creative agencies and startups to plan, build and launch elegant, engaging experiences on the web.',
-		'As someone who has collaborated creatively with others in areas beyond tech, Michael believes that being a functional part of a team is just as important as any individual\'s technical skillset. Constantly striving to grow and learn, he makes it a point to research, learn and experiment with the latest in web design and development. When coding, Michael enjoys drinking coffee and Spotify. When not coding, he enjoys good beer & playing his guitar. He currently resides in Greenpoint, Brooklyn.',
+		'As someone who has collaborated creatively with others in areas beyond tech, Michael believes that being a functional part of a team is just as important as any individual\'s technical skillset. Constantly striving to grow and learn, he makes it a point to research, learn and experiment with the latest in web design and development.',
+		'He currently resides in Greenpoint, Brooklyn.',
 	],
+}
+
+export const contact = {
+	links: [
+		{
+			name: 'Email',
+			url: 'mailto:mbeaujean88@gmail.com',
+		},
+		{
+			name: 'LinkedIn',
+			url: 'https://www.linkedin.com/in/mbeaujean/',
+		},
+		{
+			name: 'Github',
+			url: 'https://github.com/michaelbeaujean',
+		}
+	],
+	credits: 'Designed and developed by',
 }
