@@ -6,6 +6,7 @@ import MyHamburger from '../components/MyHamburger';
 import Menu from '../components/Menu';
 import Intro from '../components/Intro';
 import Work from '../components/Work';
+import About from '../components/About';
 
 function Home() {
 	const [navActive, setNavActive] = useState(false);
@@ -25,6 +26,7 @@ function Home() {
 			<main>
 				<Intro />
 				<Work />
+				<About />
 			</main>
 		</PageContext.Provider>
 	)

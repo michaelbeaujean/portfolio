@@ -1,4 +1,5 @@
 import Sticker from './Sticker';
+import { intro } from '../data';
 
 const Intro = () => {
 	return (
@@ -8,7 +9,7 @@ const Intro = () => {
 				<div className="container flex items-center">
 					<div className="lg:min-w-1/2 lg:pl-28">
 						<h2 className="w-full md:w-1/2 lg:w-1/3 text-2xl font-light tracking-tight antialiased">
-							A New York City-based web developer, with a passion for design, performance and collaboration.
+							{intro}
 						</h2>
 					</div>
 				</div>

@@ -39,12 +39,16 @@ module.exports = {
 				'25px': remCalc(25),
 				'30px': remCalc(30),
 				'108px': remCalc(108),
+				'1/2-screen': '50vh',
 			},
 			zIndex: {
 				'-1': '-1',
 				'2': '2',
 				'3': '3',
 			},
+			minWidth: {
+				'516': '516px',
+			}
 		},
 	},
 	variants: {

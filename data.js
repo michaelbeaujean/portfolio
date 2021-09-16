@@ -13,6 +13,8 @@ export const menu = [
 	},
 ];
 
+export const intro = 'A New York City-based web developer, with a passion for design, performance and collaboration.';
+
 export const work = [
 	{
 		name: 'XQ Institute',
@@ -39,3 +41,10 @@ export const work = [
 		stack: 'JavaScript, WordPress',
 	},
 ];
+
+export const about = {
+	bio: [
+		'Michael Beaujean is a web developer and creative technologist based in New York City. Over the last 7+ years, he\'s worked with global brands, creative agencies and startups to plan, build and launch elegant, engaging experiences on the web.',
+		'As someone who has collaborated creatively with others in areas beyond tech, Michael believes that being a functional part of a team is just as important as any individual\'s technical skillset. Constantly striving to grow and learn, he makes it a point to research, learn and experiment with the latest in web design and development. When coding, Michael enjoys drinking coffee and Spotify. When not coding, he enjoys good beer & playing his guitar. He currently resides in Greenpoint, Brooklyn.',
+	],
+}

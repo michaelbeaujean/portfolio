@@ -38,7 +38,7 @@ const Menu = () => {
 
 	return (
 		<motion.div
-			className="fixed top-0 left-0 w-full h-0 z-10 bg-white transform origin-top flex flex-col justify-center"
+			className="fixed top-0 left-0 w-full h-0 z-10 bg-white transform origin-top flex flex-col justify-center overflow-hidden"
 			initial="hidden"
 			animate={navActive ? 'visible' : 'hidden'}
 			variants={variants}

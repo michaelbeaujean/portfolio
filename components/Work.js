@@ -7,9 +7,9 @@ const Work = () => {
 	};
 
 	return (
-		<section className="h-screen flex items-center">
+		<section className="h-screen flex items-center mb-1/2-screen md:mb-0">
 			<div className="container">
-				<h3 className="mb-30px text-36px font-bold uppercase underline tracking-tight antialiased">Work</h3>
+				<h3 className="mb-30px text-36px font-extrabold uppercase underline tracking-tight antialiased">Work</h3>
 				<ul>
 					{work.map(renderProjects)}
 				</ul>
