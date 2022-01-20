@@ -4,7 +4,7 @@ import { intro } from '../data';
 const Intro = () => {
 	return (
 		<section className="h-screen">
-			<div className="mt-108px h-full flex justify-between">
+			<div className="h-full flex justify-between">
 				<Sticker color="mint" width="1/6" height="2/6" pos="center" />
 				<div className="container flex items-center">
 					<div className="lg:min-w-1/2 lg:pl-28">

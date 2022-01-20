@@ -1,10 +1,11 @@
 import { useContext } from 'react';
+import UnderlineHover from '../components/UnderlineHover';
 import PageContext from '../context/PageContext';
 import { motion } from 'framer-motion';
 import { menu } from '../data';
 
 const Menu = () => {
-	const { navActive } = useContext(PageContext);
+	const { navActive, setNavActive } = useContext(PageContext);
 
 	const variants = {
 		hidden: {
@@ -20,6 +21,19 @@ const Menu = () => {
 		duration: .4,
 	};
 
+	const onClick = (e) => {
+		e.preventDefault();
+
+		const href = e.currentTarget.getAttribute('href');
+		const section = document.querySelector(href);
+		const headerHeight = section.offsetHeight > window.innerHeight ? 108 : 0;
+		const elPos = section.getBoundingClientRect().top;
+		const offset = elPos + window.pageYOffset - headerHeight;
+
+		window.scrollTo({ top: offset });
+		setNavActive(false);
+	}
+
 	const renderMenuItems = (menuItem, i) => {
 		const {
 			slug,
@@ -28,9 +42,9 @@ const Menu = () => {
 
 		return (
 			<li className="mb-2" key={i}>
-				<a href={`#${slug}`} className="group inline-block text-4xl font-bold text-dark-grey uppercase tracking-tight">
+				<a href={`#${slug}`} className="group inline-block text-4xl font-bold text-dark-grey uppercase tracking-tight" onClick={onClick}>
 					{title}
-					<div className="w-full h-1 transform scale-x-0 group-hover:scale-x-100 origin-left duration-300 ease-in-out bg-dark-grey"></div>
+					<UnderlineHover color="bg-dark-grey" />
 				</a>
 			</li>
 		)

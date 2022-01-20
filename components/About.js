@@ -13,8 +13,8 @@ const About = () => {
 	};
 
 	return (
-		<section className="relative h-screen mb-1/2-screen md:mb-0 flex items-center">
-			<Sticker color="light-cherry" width="1/6" height="2/6" pos="start" />
+		<section className="relative min-h-screen md:h-screen mb-108px md:mb-0 flex md:items-center" id="about">
+			<Sticker color="light-cherry" width="1/6" height="2/6" pos="start" className="hidden md:block" />
 			<div className="container">
 				<h3 className="xl:pl-108px mb-30px text-36px font-extrabold uppercase underline tracking-tight antialiased">About</h3>
 				<div className="flex flex-col lg:flex-row">
@@ -26,7 +26,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-			<Sticker color="mint" width="1/6" height="2/6" pos="end" />
+			<Sticker color="mint" width="1/6" height="2/6" pos="end" className="hidden md:block" />
 		</section>
 	)
 };

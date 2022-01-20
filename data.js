@@ -4,51 +4,24 @@ export const menu = [
 		title: 'Work',
 	},
 	{
-		href: 'about',
+		slug: 'about',
 		title: 'About',
 	},
 	{
-		href: 'contact',
+		slug: 'contact',
 		title: 'Contact',
 	},
 ];
 
 export const intro = 'A New York City-based web developer, with a passion for design, performance and collaboration.';
 
-export const work = [
-	{
-		name: 'XQ Institute',
-		stack: 'Gatsby.js, WordPress',
-	},
-	{
-		name: 'Creative Ecosystems',
-		stack: 'JavaScript, CSS, WordPress',
-	},
-	{
-		name: 'OppenheimerFunds / The Future of Global Equity',
-		stack: 'React.js, Highcharts.js, CSS',
-	},
-	{
-		name: 'OppenheimerFunds / 2019 Outlook',
-		stack: 'JavaScript, CSS animation',
-	},
-	{
-		name: 'Dow Jones / W.E. Forum World Clock',
-		stack: 'JavaScript, CSS animation',
-	},
-	{
-		name: 'The Wall Street Journal / D.Live',
-		stack: 'JavaScript, CSS, WordPress',
-	},
-];
-
 export const about = {
 	bio: [
-		'Michael Beaujean is a web developer and creative technologist based in New York City. Over the last 7+ years, he\'s worked with global brands, creative agencies and startups to plan, build and launch elegant, engaging experiences on the web.',
+		'Michael Beaujean is a web developer and creative technologist based in New York City. Over the last decade, he\'s worked with global brands, creative agencies and startups to plan, build and launch elegant, engaging experiences on the web.',
 		'As someone who has collaborated creatively with others in areas beyond tech, Michael believes that being a functional part of a team is just as important as any individual\'s technical skillset. Constantly striving to grow and learn, he makes it a point to research, learn and experiment with the latest in web design and development.',
 		'He currently resides in Greenpoint, Brooklyn.',
 	],
-}
+};
 
 export const contact = {
 	links: [
@@ -66,4 +39,63 @@ export const contact = {
 		}
 	],
 	credits: 'Designed and developed by',
-}
+};
+
+export const workPages = [
+	{
+		slug: 'xq-institute',
+		title: 'The XQ Institute',
+		stack: 'Gatsby.js, WordPress',
+		description: [
+			'A static site generated with Gatsby.js on the front-end and Wordpress as a CMS. Also utilizing TailwindCSS as a front-end framework.',
+		],
+		link: 'https://xqsuperschool.org',
+		videoUrl: 'https://youtu.be/sEgdYEuwm7g',
+	},
+	{
+		slug: 'creative-ecosystems',
+		title: 'Creative Ecosystems',
+		stack: 'JavaScript, CSS, WordPress',
+		description: [
+			'A custom Wordpress theme with vanilla JavaScript, TailwindCSS, and Wordpress as a CMS.',
+		],
+		link: 'https://creativeecosystems.org',
+		videoUrl: 'https://youtu.be/svhJ9gLs2w8',
+	},
+	{
+		slug: 'ofi-future-of-global-equity',
+		title: 'OppenheimerFunds / The Future of Global Equity',
+		stack: 'React.js, Highcharts.js, CSS',
+		description: [
+			'A static site built with React.js. Using a combination of Highcharts.js and custom CSS for the animated data visualization.',
+		],
+		videoUrl: 'https://youtu.be/PS8RjGLfJpU',
+	},
+	{
+		slug: 'ofi-outlook-2019',
+		title: 'OppenheimerFunds / 2019 Outlook',
+		stack: 'JavaScript, CSS animation',
+		description: [
+			'A static site built with vanilla JavaScript, Sass and HTML.',
+		],
+		videoUrl: 'https://youtu.be/WJP9OW52Mhs',
+	},
+	{
+		slug: 'dj-we-forum-world-clock',
+		title: 'Dow Jones / W.E. Forum World Clock',
+		stack: 'JavaScript, CSS animation',
+		description: [
+			'A static site built with vanilla JavaScript, Sass and HTML.',
+		],
+		videoUrl: 'https://youtu.be/9gR8i2OT7C0',
+	},
+	{
+		slug: 'wsj-dlive',
+		title: 'The Wall Street Journal / D.Live',
+		stack: 'JavaScript, CSS, WordPress',
+		description: [
+			'A custom Wordpress theme built on jQuery and Sass.',
+		],
+		videoUrl: 'https://youtu.be/GyBbE2htIWU',
+	},
+];

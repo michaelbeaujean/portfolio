@@ -8,6 +8,7 @@ const Sticker = props => {
 		width,
 		height,
 		pos,
+		className,
 	} = props;
 
 	const [yPos, setYPos] = useState(0);
@@ -25,7 +26,7 @@ const Sticker = props => {
 		window.addEventListener('scroll', onScroll);
 	}, [sticker]);
 
-	return <motion.div className={`bg-${color} w-${width} h-${height} self-${pos} ${pos === 'end' ? 'mt-24' : ''}`} style={{ y: yPos }} ref={sticker}></motion.div>;
+	return <motion.div className={`bg-${color} w-${width} h-${height} self-${pos} ${pos === 'end' ? 'mt-24' : ''} ${className}`} style={{ y: yPos }} ref={sticker}></motion.div>;
 }
 
 export default Sticker;

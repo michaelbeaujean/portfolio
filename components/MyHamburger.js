@@ -8,13 +8,9 @@ const MyHamburger = () => {
 		setNavActive,
 	} = useContext(PageContext);
 
-	const onToggle = () => {
-		setNavActive(!navActive);
-	}
-
 	return (
 		<div className="self-center text-0">
-			<Hamburger onToggle={onToggle} />
+			<Hamburger toggled={navActive} toggle={setNavActive} />
 		</div>
 	)
 };

@@ -1,5 +1,5 @@
 import WorkItem from './WorkItem';
-import { work } from '../data';
+import { workPages } from '../data';
 
 const Work = () => {
 	const renderProjects = (project, i) => {
@@ -7,11 +7,11 @@ const Work = () => {
 	};
 
 	return (
-		<section className="h-screen flex items-center mb-1/2-screen md:mb-0">
+		<section className="min-h-screen flex items-center md:mb-0" id="work">
 			<div className="container">
 				<h3 className="mb-30px text-36px font-extrabold uppercase underline tracking-tight antialiased">Work</h3>
 				<ul>
-					{work.map(renderProjects)}
+					{workPages.map(renderProjects)}
 				</ul>
 			</div>
 		</section>
