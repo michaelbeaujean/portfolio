@@ -43,11 +43,21 @@ export const contact = {
 
 export const workPages = [
 	{
+		slug: 'galileo',
+		title: 'Galileo',
+		stack: 'Next.js, Contentful',
+		description: [
+			'A static site generated with Next.js with Contentful as a CMS.',
+		],
+		link: 'https://galileo.io',
+		videoUrl: 'https://youtu.be/qpKETYQK21E',
+	},
+	{
 		slug: 'xq-institute',
 		title: 'The XQ Institute',
 		stack: 'Gatsby.js, WordPress',
 		description: [
-			'A static site generated with Gatsby.js on the front-end and Wordpress as a CMS. Also utilizing TailwindCSS as a front-end framework.',
+			'A static site generated with Gatsby.js and Wordpress as a CMS.',
 		],
 		link: 'https://xqsuperschool.org',
 		videoUrl: 'https://youtu.be/sEgdYEuwm7g',
@@ -57,7 +67,7 @@ export const workPages = [
 		title: 'Creative Ecosystems',
 		stack: 'JavaScript, CSS, WordPress',
 		description: [
-			'A custom Wordpress theme with vanilla JavaScript, TailwindCSS, and Wordpress as a CMS.',
+			'A custom Wordpress theme built with Twig and JavaScript.',
 		],
 		link: 'https://creativeecosystems.org',
 		videoUrl: 'https://youtu.be/svhJ9gLs2w8',
@@ -67,7 +77,7 @@ export const workPages = [
 		title: 'OppenheimerFunds / The Future of Global Equity',
 		stack: 'React.js, Highcharts.js, CSS',
 		description: [
-			'A static site built with React.js. Using a combination of Highcharts.js and custom CSS for the animated data visualization.',
+			'A static site built with React.js and Highcharts.js/CSS for animated data visualization.',
 		],
 		videoUrl: 'https://youtu.be/PS8RjGLfJpU',
 	},
@@ -76,7 +86,7 @@ export const workPages = [
 		title: 'OppenheimerFunds / 2019 Outlook',
 		stack: 'JavaScript, CSS animation',
 		description: [
-			'A static site built with vanilla JavaScript, Sass and HTML.',
+			'A static HTML/CSS/JS site.',
 		],
 		videoUrl: 'https://youtu.be/WJP9OW52Mhs',
 	},
@@ -85,7 +95,7 @@ export const workPages = [
 		title: 'Dow Jones / W.E. Forum World Clock',
 		stack: 'JavaScript, CSS animation',
 		description: [
-			'A static site built with vanilla JavaScript, Sass and HTML.',
+			'A static HTML/CSS/JS site.',
 		],
 		videoUrl: 'https://youtu.be/9gR8i2OT7C0',
 	},
@@ -94,7 +104,7 @@ export const workPages = [
 		title: 'The Wall Street Journal / D.Live',
 		stack: 'JavaScript, CSS, WordPress',
 		description: [
-			'A custom Wordpress theme built on jQuery and Sass.',
+			'A custom Wordpress theme with JavaScript.',
 		],
 		videoUrl: 'https://youtu.be/GyBbE2htIWU',
 	},

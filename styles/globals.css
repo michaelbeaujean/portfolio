@@ -24,3 +24,8 @@ h3 {
 p {
 	line-height: 140% !important;
 }
+
+::selection {
+	@apply bg-mint;
+	@apply text-white;
+}
