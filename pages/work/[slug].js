@@ -1,3 +1,5 @@
+import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import ReactPlayer from 'react-player';
 import Layout from '../../components/Layout';
@@ -6,8 +8,6 @@ import Sticker from '../../components/Sticker';
 import UnderlineHover from '../../components/UnderlineHover';
 import externalLinkIcon from '../../public/external-link.svg';
 import { getAllWorkSlugs, getWorkPageData } from '../../lib/work';
-import React from 'react';
-import Link from 'next/link';
 
 export async function getStaticPaths() {
 	const paths = getAllWorkSlugs();
@@ -38,7 +38,7 @@ const Work = ({ workPageData }) => {
 	} = workPageData.workPage;
 
 	return (
-		<Layout>
+		<Layout title={title}>
 			<div className="h-screen flex items-center">
 				<Sticker color="light-cherry" width="1/6" height="2/6" pos="start" className="hidden md:block" />
 				<div className="container">
@@ -75,7 +75,7 @@ const Work = ({ workPageData }) => {
 						<p className="mt-20px font-light tracking-tight leading-tight antialiased xl:w-1/2">{description}</p>
 						{link && (
 							<>
-								<a href={link} target="_blank" rel="noopener" className="group mt-15px font-semibold uppercase text-18px tracking-tight leading-tight antialiased group flex items-start">
+								<a href={link} target="_blank" rel="noopener" className="group mt-20px font-semibold uppercase text-18px tracking-tight leading-tight antialiased group flex items-start">
 									<div className="inline-block">
 										Visit site
 										<UnderlineHover />
