@@ -7,6 +7,7 @@ import UnderlineHover from '../../components/UnderlineHover';
 import externalLinkIcon from '../../public/external-link.svg';
 import { getAllWorkSlugs, getWorkPageData } from '../../lib/work';
 import React from 'react';
+import Link from 'next/link';
 
 export async function getStaticPaths() {
 	const paths = getAllWorkSlugs();
@@ -39,8 +40,17 @@ const Work = ({ workPageData }) => {
 	return (
 		<Layout>
 			<div className="h-screen flex items-center">
-				<Sticker color="light-cherry" width="1/6" height="2/6" pos="start" />
-				<div className="container flex">
+				<Sticker color="light-cherry" width="1/6" height="2/6" pos="start" className="hidden md:block" />
+				<div className="container">
+					<ConditionalWrapper
+						condition={link}
+						wrapper={children => <a href={link} target="_blank" rel="noopener" className="group inline-block">{children}</a>}
+					>
+						<h2 className="font-semibold uppercase text-24px mb-15px tracking-tight leading-tight antialiased">
+							{title}
+							<UnderlineHover />
+						</h2>
+					</ConditionalWrapper>
 					{videoUrl && (
 						<div>
 							<ReactPlayer
@@ -56,27 +66,33 @@ const Work = ({ workPageData }) => {
 								playing={true}
 								loop={true}
 								controls={false}
+								className="max-w-full"
 								muted
 							/>
 						</div>
 					)}
-					<div className="lg:w-1/2 lg:ml-auto">
-						<div className="flex pb-2">
-							<ConditionalWrapper
-								condition={link}
-								wrapper={children => <a href={link} target="_blank" rel="noopener" className="group flex">{children}</a>}
-							>
-								<h2 className="font-semibold uppercase text-24px tracking-tight leading-tight antialiased">
-									{title}
-									<UnderlineHover />
-								</h2>
-								{link && <Image src={externalLinkIcon} width="30" height="30" />}
-							</ConditionalWrapper>
-						</div>
-						<p className="font-light tracking-tight leading-tight antialiased">{description}</p>
+					<div>
+						<p className="mt-20px font-light tracking-tight leading-tight antialiased xl:w-1/2">{description}</p>
+						{link && (
+							<>
+								<a href={link} target="_blank" rel="noopener" className="group mt-15px font-semibold uppercase text-18px tracking-tight leading-tight antialiased group flex items-start">
+									<div className="inline-block">
+										Visit site
+										<UnderlineHover />
+									</div>
+									<Image src={externalLinkIcon} width="25" height="25" />
+								</a>
+							</>
+						)}
+						<Link href="/#work">
+							<a className="inline-block group mt-15px font-semibold uppercase text-18px tracking-tight leading-tight antialiased group">
+								See more work
+								<UnderlineHover />
+							</a>
+						</Link>
 					</div>
 				</div>
-				<Sticker color="mint" width="1/6" height="2/6" pos="end" />
+				<Sticker color="mint" width="1/6" height="2/6" pos="end" className="hidden md:block" />
 			</div>
 		</Layout>
 	)

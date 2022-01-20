@@ -22,6 +22,7 @@ module.exports = {
 			},
 			fontSize: {
 				'15px': remCalc(15),
+				'18px': remCalc(18),
 				'24px': remCalc(24),
 				'36px': remCalc(36),
 				'48px': remCalc(48),
@@ -35,6 +36,7 @@ module.exports = {
 			spacing: {
 				'3px': remCalc(3),
 				'5px': remCalc(5),
+				'15px': remCalc(15),
 				'20px': remCalc(20),
 				'25px': remCalc(25),
 				'30px': remCalc(30),
