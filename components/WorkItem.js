@@ -40,12 +40,12 @@ const WorkItem = (props) => {
 					className="inline-block pr-2 relative uppercase tracking-tight font-bold antialiased cursor-pointer"
 				>
 					<motion.div
-						className="absolute top-0 left-0 bg-mint w-full h-full"
+						className="w-0 absolute top-0 left-0 bg-mint w-full h-full"
 						animate={{ width: hover ? '100%' : 0 }}
 						transition={transition}
 					/>
 					<motion.div
-						className="absolute top-1/2 left-2 transform -translate-y-1/2 flex items-center h-1/2 z-3 overflow-hidden"
+						className="w-0 absolute top-1/2 left-2 transform -translate-y-1/2 flex items-center h-1/2 z-3 overflow-hidden"
 						animate={{ width: hover ? 'auto' : 0 }}
 						transition={transition}
 					>

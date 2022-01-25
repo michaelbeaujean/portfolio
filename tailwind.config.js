@@ -35,6 +35,7 @@ module.exports = {
 				'screen-minus-header': 'calc(100vh - 108px)',
 			},
 			spacing: {
+				'0': 0,
 				'3px': remCalc(3),
 				'5px': remCalc(5),
 				'15px': remCalc(15),
