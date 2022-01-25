@@ -31,7 +31,7 @@ const Contact = () => {
 
 	return (
 		<section className="flex relative items-center h-screen pb-16" id="contact">
-			<Sticker color="baige" width="1/6" height="1/3" pos="center" className="hidden md:block" />
+			<Sticker color="bg-baige" width="w-1/6" height="h-1/3" pos="self-center" className="hidden md:block" />
 			<div className="container">
 				<div className="xl:pl-108px">
 					<h3 className="mb-30px text-36px font-extrabold uppercase underline tracking-tight antialiased">Contact</h3>
@@ -48,7 +48,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<Sticker color="light-cherry" width="1/4" height="2/6" pos="end" className="hidden md:block" />
+			<Sticker color="bg-light-cherry" width="w-1/4" height="h-2/6" pos="self-end" className="hidden md:block" />
 		</section>
 	)
 };

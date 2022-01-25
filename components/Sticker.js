@@ -18,15 +18,14 @@ const Sticker = props => {
 		const { current } = sticker;
 		const { y, top } = current.getBoundingClientRect();
 	
-
 		const onScroll = () => {
-			console.log(window.scrollY);
+			// console.log(window.scrollY);
 		};
 
 		window.addEventListener('scroll', onScroll);
 	}, [sticker]);
 
-	return <motion.div className={`bg-${color} w-${width} h-${height} self-${pos} ${pos === 'end' ? 'mt-24' : ''} ${className}`} style={{ y: yPos }} ref={sticker}></motion.div>;
+	return <motion.div className={`${color} ${width} ${height} ${pos} ${pos === 'self-end' ? 'mt-24' : ''} ${className}`} style={{ y: yPos }} ref={sticker}></motion.div>;
 }
 
 export default Sticker;
