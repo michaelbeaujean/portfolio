@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ScrollLock from 'react-scrolllock';
 import PageContext from '../context/PageContext';
 import Head from '../components/Head';
 import Logo from '../components/Logo';
@@ -19,7 +20,9 @@ const Layout = (props) => {
 				</div>
 			</nav>
 			<Menu />
-			{children}
+			<ScrollLock isActive={navActive}>
+				{children}
+			</ScrollLock>
 		</PageContext.Provider>
 	)
 }
