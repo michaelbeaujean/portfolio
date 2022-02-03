@@ -1,3 +1,4 @@
+import Headline from './Headline';
 import Sticker from './Sticker';
 import { about } from '../data';
 import headshot from '../public/me.jpg';
@@ -15,7 +16,7 @@ const About = () => {
 		<section className="relative min-h-screen md:h-screen mb-108px md:mb-0 flex md:items-center" id="about">
 			<Sticker color="bg-light-cherry" width="w-1/6" height="h-2/6" pos="self-start" className="hidden md:block" />
 			<div className="container">
-				<h3 className="xl:pl-108px mb-30px text-36px font-extrabold uppercase underline tracking-tight antialiased">About</h3>
+				<Headline className="xl:ml-108px">About</Headline>
 				<div className="flex flex-col lg:flex-row">
 					<div className="lg:pl-8 lg:ml-auto lg:order-2 pb-4 lg:pb-0">
 						<img src={headshot} alt="A headshot photo of me" />

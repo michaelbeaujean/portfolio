@@ -42,7 +42,7 @@ const Menu = () => {
 
 		return (
 			<li className="mb-2" key={i}>
-				<a href={`#${slug}`} className="group inline-block text-4xl font-bold text-dark-grey uppercase tracking-tight" onClick={onClick}>
+				<a href={`#${slug}`} className="group inline-block text-4xl font-bold text-dark-grey uppercase tracking-tight leading-none" onClick={onClick}>
 					{title}
 					<UnderlineHover color="bg-dark-grey" />
 				</a>

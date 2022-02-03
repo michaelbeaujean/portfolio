@@ -1,3 +1,4 @@
+import Headline from './Headline';
 import Sticker from '../components/Sticker';
 import UnderlineHover from './UnderlineHover';
 import { contact } from '../data';
@@ -20,7 +21,7 @@ const Contact = () => {
 					href={url}
 					target="_blank"
 					rel="noopener"
-					className="inline-block text-24px lg:text-36px tracking-tight leading-tight font-semibold uppercase antialiased group"
+					className="inline-block mb-3 text-24px lg:text-36px tracking-tight leading-none font-semibold uppercase antialiased group"
 				>
 					{name}
 					<UnderlineHover />
@@ -34,12 +35,12 @@ const Contact = () => {
 			<Sticker color="bg-baige" width="w-1/6" height="h-1/3" pos="self-center" className="hidden md:block" />
 			<div className="container">
 				<div className="xl:pl-108px">
-					<h3 className="mb-30px text-36px font-extrabold uppercase underline tracking-tight antialiased">Contact</h3>
+					<Headline>Contact</Headline>
 					<ul>
 						{links.map(renderLinks)}
 					</ul>
 					<div className="py-16 text-36px">-</div>
-					<div className="w-3/4 text-24px lg:text-36px leading-tight tracking-tight font-semibold uppercase antialiased">
+					<div className="w-3/4 text-24px lg:text-36px tracking-tight leading-tight font-semibold uppercase antialiased">
 						{credits}&nbsp;
 						<a href="mailto:mbeaujean88@gmail.com" className="inline-block whitespace-nowrap group">
 							Michael Beaujean
