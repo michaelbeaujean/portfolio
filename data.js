@@ -50,7 +50,7 @@ export const workPages = [
 			'A static site generated with Next.js with Contentful as a CMS.',
 		],
 		link: 'https://galileo.io',
-		videoUrl: 'https://youtu.be/qpKETYQK21E',
+		videoUrl: 'https://vimeo.com/682556605',
 	},
 	{
 		slug: 'xq-institute',
@@ -60,7 +60,7 @@ export const workPages = [
 			'A static site generated with Gatsby.js and Wordpress as a CMS.',
 		],
 		link: 'https://xqsuperschool.org',
-		videoUrl: 'https://youtu.be/sEgdYEuwm7g',
+		videoUrl: 'https://vimeo.com/682556652',
 	},
 	{
 		slug: 'creative-ecosystems',
@@ -70,7 +70,7 @@ export const workPages = [
 			'A custom Wordpress theme built with Twig and JavaScript.',
 		],
 		link: 'https://creativeecosystems.org',
-		videoUrl: 'https://youtu.be/svhJ9gLs2w8',
+		videoUrl: 'https://vimeo.com/682556609',
 	},
 	{
 		slug: 'ofi-future-of-global-equity',
@@ -79,7 +79,7 @@ export const workPages = [
 		description: [
 			'A static site built with React.js and Highcharts.js/CSS for animated data visualization.',
 		],
-		videoUrl: 'https://youtu.be/PS8RjGLfJpU',
+		videoUrl: 'https://vimeo.com/682556620',
 	},
 	{
 		slug: 'ofi-outlook-2019',
@@ -88,7 +88,7 @@ export const workPages = [
 		description: [
 			'A static HTML/CSS/JS site.',
 		],
-		videoUrl: 'https://youtu.be/WJP9OW52Mhs',
+		videoUrl: 'https://vimeo.com/682556626',
 	},
 	{
 		slug: 'dj-we-forum-world-clock',
@@ -97,7 +97,7 @@ export const workPages = [
 		description: [
 			'A static HTML/CSS/JS site.',
 		],
-		videoUrl: 'https://youtu.be/9gR8i2OT7C0',
+		videoUrl: 'https://vimeo.com/682556590',
 	},
 	{
 		slug: 'wsj-dlive',
@@ -106,6 +106,6 @@ export const workPages = [
 		description: [
 			'A custom Wordpress theme with JavaScript.',
 		],
-		videoUrl: 'https://youtu.be/GyBbE2htIWU',
+		videoUrl: 'https://vimeo.com/682556647',
 	},
 ];
