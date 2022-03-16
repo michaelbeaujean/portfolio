@@ -47,7 +47,7 @@ export const workPages = [
 		title: 'Galileo',
 		stack: 'Next.js, Contentful',
 		description: [
-			'A static site generated with Next.js with Contentful as a CMS.',
+			'A static site generated with Next.js with Contentful as a CMS. Developed with <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
 		],
 		link: 'https://galileo.io',
 		videoUrl: 'https://vimeo.com/682556605',
@@ -57,7 +57,7 @@ export const workPages = [
 		title: 'The XQ Institute',
 		stack: 'Gatsby.js, WordPress',
 		description: [
-			'A static site generated with Gatsby.js and Wordpress as a CMS.',
+			'A static site generated with Gatsby.js and Wordpress as a CMS. Developed with <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
 		],
 		link: 'https://xqsuperschool.org',
 		videoUrl: 'https://vimeo.com/682556652',
@@ -67,7 +67,7 @@ export const workPages = [
 		title: 'Creative Ecosystems',
 		stack: 'JavaScript, CSS, WordPress',
 		description: [
-			'A custom Wordpress theme built with Twig and JavaScript.',
+			'A custom Wordpress theme built with Twig and JavaScript. Developed with <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
 		],
 		link: 'https://creativeecosystems.org',
 		videoUrl: 'https://vimeo.com/682556609',

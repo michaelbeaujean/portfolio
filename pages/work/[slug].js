@@ -71,7 +71,7 @@ const Work = ({ workPageData }) => {
 						</div>
 					)}
 					<div>
-						<p className="mt-20px font-light tracking-tight leading-tight antialiased xl:w-1/2">{description}</p>
+						<p className="mt-20px font-light tracking-tight leading-tight antialiased xl:w-1/2" dangerouslySetInnerHTML={{ __html: description }} />
 						{link && (
 							<>
 								<a href={link} target="_blank" rel="noopener" className="group mt-20px font-semibold uppercase text-18px tracking-tight leading-tight antialiased group flex items-start">

@@ -10,11 +10,11 @@
   "dependencies": {
     "framer-motion": "^6.2.3",
     "hamburger-react": "^2.4.0",
-    "next": "^12.0.8",
+    "next": "^12.1.0",
     "next-images": "^1.8.4",
     "prop-types": "^15.8.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-ga": "^3.3.0",
     "react-player": "^2.9.0",
     "react-scrolllock": "^5.0.1"
@@ -22,6 +22,7 @@
   "devDependencies": {
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
+    "postcss-nested": "^5.0.6",
     "tailwindcss": "^2.0.3",
     "webpack": "^4.44.2"
   }

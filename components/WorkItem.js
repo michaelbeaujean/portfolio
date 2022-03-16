@@ -1,7 +1,6 @@
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import ConditionalWrapper from '../components/ConditionalWrapper';
 
 const WorkItem = (props) => {
 	const [hover, setHover] = useState(false);
@@ -11,7 +10,6 @@ const WorkItem = (props) => {
 		title,
 		stack,
 		slug,
-		link,
 	} = project;
 
 	const transition = {
@@ -25,22 +23,14 @@ const WorkItem = (props) => {
 
 	return (
 		<li className="relative">
-			<ConditionalWrapper
-				condition={!link}
-				wrapper={children => <Link href={`/work/${slug}`}>{children}</Link>}
-			>
+			<Link href={`/work/${slug}`}>
 				<a
-					{...link && {
-						href: link,
-						target: '_blank',
-						rel: 'noopener'
-					}}
 					onMouseEnter={onHover}
 					onMouseLeave={onHover}
 					className="inline-block pr-2 relative uppercase tracking-tight font-bold antialiased cursor-pointer"
 				>
 					<motion.div
-						className="absolute top-0 left-0 bg-mint w-full h-full"
+						className="absolute top-0 left-0 bg-mint w-0 h-full"
 						animate={{ width: hover ? '100%' : 0 }}
 						transition={transition}
 					/>
@@ -56,7 +46,7 @@ const WorkItem = (props) => {
 					</motion.div>
 					<span className="text-24px lg:text-36px relative z-2">{title}</span>
 				</a>
-			</ConditionalWrapper>
+			</Link>
 		</li>
 	)
 };

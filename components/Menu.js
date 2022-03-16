@@ -3,6 +3,7 @@ import UnderlineHover from '../components/UnderlineHover';
 import PageContext from '../context/PageContext';
 import { motion } from 'framer-motion';
 import { menu } from '../data';
+import Link from 'next/link';
 
 const Menu = () => {
 	const { navActive, setNavActive } = useContext(PageContext);
@@ -22,16 +23,17 @@ const Menu = () => {
 	};
 
 	const onClick = (e) => {
-		e.preventDefault();
-
-		const href = e.currentTarget.getAttribute('href');
-		const section = document.querySelector(href);
-		const headerHeight = section.offsetHeight > window.innerHeight ? 108 : 0;
-		const elPos = section.getBoundingClientRect().top;
-		const offset = elPos + window.pageYOffset - headerHeight;
-
-		window.scrollTo({ top: offset });
 		setNavActive(false);
+
+		if (window.location.pathname === '/') {
+			const href = e.currentTarget.getAttribute('href');
+			const section = document.querySelector(href.replace('/', ''));
+			const headerHeight = section.offsetHeight > window.innerHeight ? 108 : 0;
+			const elPos = section.getBoundingClientRect().top;
+			const offset = elPos + window.pageYOffset - headerHeight;
+	
+			window.scrollTo({ top: offset });
+		}
 	}
 
 	const renderMenuItems = (menuItem, i) => {
@@ -42,10 +44,12 @@ const Menu = () => {
 
 		return (
 			<li className="mb-2" key={i}>
-				<a href={`#${slug}`} className="group inline-block text-4xl font-bold text-dark-grey uppercase tracking-tight leading-none" onClick={onClick}>
-					{title}
-					<UnderlineHover color="bg-dark-grey" />
-				</a>
+				<Link href={`/#${slug}`}>
+					<a className="group inline-block text-4xl font-bold text-dark-grey uppercase tracking-tight leading-none" onClick={onClick}>
+						{title}
+						<UnderlineHover color="bg-dark-grey" />
+					</a>
+				</Link>
 			</li>
 		)
 	}

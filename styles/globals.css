@@ -23,6 +23,14 @@ h3 {
 
 p {
 	line-height: 140% !important;
+
+	a {
+		@apply border-b;
+
+		&:hover {
+			@apply border-b-0;
+		}
+	}
 }
 
 ::selection {
