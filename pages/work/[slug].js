@@ -71,17 +71,21 @@ const Work = ({ workPageData }) => {
 						</div>
 					)}
 					<div>
-						<p className="mt-20px font-light tracking-tight leading-tight antialiased xl:w-1/2" dangerouslySetInnerHTML={{ __html: description }} />
+						<div className="mt-20px font-light tracking-tight leading-tight antialiased xl:w-1/2">
+							{description.map((descItem, i) => <p dangerouslySetInnerHTML={{ __html: descItem }} key={i} className="mb-15px last:mb-0" />)}
+						</div>
 						{link && (
-							<>
-								<a href={link} target="_blank" rel="noopener" className="group mt-20px font-semibold uppercase text-18px tracking-tight leading-tight antialiased group flex items-start">
-									<div className="inline-block">
-										Visit site
-										<UnderlineHover />
-									</div>
-									<img src={externalLinkIcon} width="25" height="25" />
+							<div>
+								<a href={link} target="_blank" rel="noopener" className="group mt-20px font-semibold uppercase text-18px tracking-tight leading-tight antialiased group inline-block">
+									<div className="flex items-start">
+										<div className="inline-block">
+											Visit site
+											<UnderlineHover />
+										</div>
+										<img src={externalLinkIcon} width="23" height="23" className="ml-5px mt-[-2px]" />
+									</div>									
 								</a>
-							</>
+							</div>
 						)}
 						<Link href="/#work">
 							<a className="inline-block group mt-15px font-semibold uppercase text-18px tracking-tight leading-tight antialiased group">

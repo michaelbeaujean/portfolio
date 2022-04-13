@@ -47,7 +47,8 @@ export const workPages = [
 		title: 'Galileo',
 		stack: 'Next.js, Contentful',
 		description: [
-			'A static site generated with Next.js with Contentful as a CMS. Developed with <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
+			'A static site generated with Next.js with Contentful as a CMS.',
+			'Developed with <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
 		],
 		link: 'https://galileo.io',
 		videoUrl: 'https://vimeo.com/682556605',
@@ -57,7 +58,9 @@ export const workPages = [
 		title: 'The XQ Institute',
 		stack: 'Gatsby.js, WordPress',
 		description: [
-			'A static site generated with Gatsby.js and Wordpress as a CMS. Developed with <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
+			'A static site generated with Gatsby.js and Wordpress as a CMS.',
+			'Nominated for a 2021 Webby Award in <a href="https://winners.webbyawards.com/winners/websites-and-mobile-sites/general-websites-and-mobile-sites/government-civil-innovation?years=0" target="_blank" rel="noopener">Websites and Mobile Sites - Government & Civil Innovation</a>.',
+			'Developed with <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
 		],
 		link: 'https://xqsuperschool.org',
 		videoUrl: 'https://vimeo.com/682556652',
@@ -67,7 +70,9 @@ export const workPages = [
 		title: 'Creative Ecosystems',
 		stack: 'JavaScript, CSS, WordPress',
 		description: [
-			'A custom Wordpress theme built with Twig and JavaScript. Developed with <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
+			'A custom Wordpress theme built with Twig and JavaScript.',
+			'Nominated for a 2022 Webby Award in <a href="https://vote.webbyawards.com/PublicVoting#/2022/websites-and-mobile-sites/general-websites-and-mobile-sites/employment" target="_blank" rel="noopener">Websites and Mobile Sites - Employment</a>.',
+			'Developed with <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
 		],
 		link: 'https://creativeecosystems.org',
 		videoUrl: 'https://vimeo.com/682556609',
