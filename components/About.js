@@ -15,7 +15,7 @@ const About = () => {
 	return (
 		<section className="relative min-h-screen md:h-screen mb-108px md:mb-0 flex md:items-center" id="about">
 			<Sticker color="bg-light-cherry" width="w-1/6" height="h-2/6" pos="self-start" className="hidden md:block" />
-			<div className="container">
+			<div className="container pt-108px lg:pt-0">
 				<Headline className="xl:ml-108px">About</Headline>
 				<div className="flex flex-col lg:flex-row">
 					<div className="lg:pl-8 lg:ml-auto lg:order-2 pb-4 lg:pb-0">

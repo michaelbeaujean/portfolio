@@ -42,6 +42,7 @@ module.exports = {
 				'20px': remCalc(20),
 				'25px': remCalc(25),
 				'30px': remCalc(30),
+				'60px': remCalc(60),
 				'108px': remCalc(108),
 				'1/2-screen': '50vh',
 			},
