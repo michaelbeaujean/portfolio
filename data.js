@@ -71,7 +71,7 @@ export const workPages = [
 		stack: 'JavaScript, CSS, WordPress',
 		description: [
 			'A custom Wordpress theme built with Twig and JavaScript.',
-			'Nominated for a 2022 Webby Award in <a href="https://vote.webbyawards.com/PublicVoting#/2022/websites-and-mobile-sites/general-websites-and-mobile-sites/employment" target="_blank" rel="noopener">Websites and Mobile Sites - Employment</a>.',
+			'Winner of the 2022 Webby Award in <a href="https://winners.webbyawards.com/2022/websites-and-mobile-sites/general-websites-and-mobile-sites/employment/205839/creative-ecosystems" target="_blank" rel="noopener">Websites and Mobile Sites - Employment</a>.',
 			'Developed with <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
 		],
 		link: 'https://creativeecosystems.org',
