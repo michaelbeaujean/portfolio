@@ -17,9 +17,9 @@ export const intro = 'A New York City-based web developer, with a passion for de
 
 export const about = {
 	bio: [
-		'Michael Beaujean is a web developer and creative technologist based in New York City. Over the last decade, he\'s worked with global brands, creative agencies and startups to plan, build and launch elegant, engaging experiences on the web.',
+		'Michael Beaujean is a web developer and creative technologist based in New York City. For over 10 years, he\'s worked with global brands, creative agencies and startups to plan, build and launch elegant, engaging experiences on the web.',
 		'As a creative collaborator, Michael believes that being a functional part of a team is just as important as any individual\'s technical skillset. Constantly striving to grow and learn, he makes it a point to research, learn and experiment with the latest in web design and development.',
-		'He currently resides in Greenpoint, Brooklyn.',
+		'He currently resides in the Kips Bay neighborhood of Manhattan.',
 	],
 };
 
@@ -43,6 +43,17 @@ export const contact = {
 
 export const workPages = [
 	{
+		slug: 'turf',
+		title: 'Turf',
+		stack: 'Next.js, Sanity',
+		description: [
+			'A headless Next.js site utilizing Sanity as a CMS.',
+			'Created and developed by <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
+		],
+		link: 'https://turf.design',
+		vimeoId: '1049437144'
+	},
+	{
 		slug: 'galileo',
 		title: 'Galileo',
 		stack: 'Next.js, Contentful',
@@ -51,7 +62,7 @@ export const workPages = [
 			'Created and developed by <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
 		],
 		link: 'https://galileo.io',
-		videoUrl: 'https://vimeo.com/682556605',
+		vimeoId: '682556605',
 	},
 	{
 		slug: 'xq-institute',
@@ -63,7 +74,7 @@ export const workPages = [
 			'Created and developed by <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
 		],
 		link: 'https://xqsuperschool.org',
-		videoUrl: 'https://vimeo.com/682556652',
+		vimeoId: '682556652',
 	},
 	{
 		slug: 'creative-ecosystems',
@@ -75,7 +86,18 @@ export const workPages = [
 			'Created and developed by <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
 		],
 		link: 'https://creativeecosystems.org',
-		videoUrl: 'https://vimeo.com/682556609',
+		vimeoId: '682556609',
+	},
+	{
+		slug: 'amplify',
+		title: 'Amplify - Boost Reading',
+		stack: 'JavaScript, CSS, WordPress',
+		description: [
+			'A custom Wordpress site',
+			'Created and developed by <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
+		],
+		link: 'https://readingsuccess.amplify.com/',
+		vimeoId: '1049362391',
 	},
 	{
 		slug: 'ofi-future-of-global-equity',
@@ -84,7 +106,7 @@ export const workPages = [
 		description: [
 			'A static site built with React.js and Highcharts.js/CSS for animated data visualization.',
 		],
-		videoUrl: 'https://vimeo.com/682556620',
+		vimeoId: '682556620',
 	},
 	{
 		slug: 'ofi-outlook-2019',
@@ -93,7 +115,7 @@ export const workPages = [
 		description: [
 			'A static HTML/CSS/JS site.',
 		],
-		videoUrl: 'https://vimeo.com/682556626',
+		vimeoId: '682556626',
 	},
 	{
 		slug: 'dj-we-forum-world-clock',
@@ -102,7 +124,7 @@ export const workPages = [
 		description: [
 			'A static HTML/CSS/JS site.',
 		],
-		videoUrl: 'https://vimeo.com/682556590',
+		vimeoId: '682556590',
 	},
 	{
 		slug: 'wsj-dlive',
@@ -111,6 +133,6 @@ export const workPages = [
 		description: [
 			'A custom Wordpress theme with JavaScript.',
 		],
-		videoUrl: 'https://vimeo.com/682556647',
+		vimeoId: '682556647',
 	},
 ];

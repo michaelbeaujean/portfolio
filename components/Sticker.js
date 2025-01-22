@@ -14,16 +14,16 @@ const Sticker = props => {
 	const [yPos, setYPos] = useState(0);
 	const sticker = useRef(null);
 
-	useEffect(() => {
-		const { current } = sticker;
-		const { y, top } = current.getBoundingClientRect();
-	
-		const onScroll = () => {
-			// console.log(window.scrollY);
-		};
+	// useEffect(() => {
+	// 	const { current } = sticker;
+	// 	const { y, top } = current.getBoundingClientRect();
 
-		window.addEventListener('scroll', onScroll);
-	}, [sticker]);
+	// 	const onScroll = () => {
+	// 		// console.log(window.scrollY);
+	// 	};
+
+	// 	window.addEventListener('scroll', onScroll);
+	// }, [sticker]);
 
 	return <motion.div className={`${color} ${width} ${height} ${pos} ${pos === 'self-end' ? 'mt-24' : ''} ${className}`} style={{ y: yPos }} ref={sticker}></motion.div>;
 }

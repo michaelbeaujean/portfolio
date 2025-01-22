@@ -17,13 +17,13 @@
     "react-dom": "^17.0.2",
     "react-ga": "^3.3.0",
     "react-player": "^2.9.0",
-    "react-scrolllock": "^5.0.1"
+    "react-remove-scroll": "^2.6.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
     "postcss-nested": "^5.0.6",
-    "tailwindcss": "^2.0.3",
+    "tailwindcss": "^3.4.17",
     "webpack": "^4.44.2"
   }
 }

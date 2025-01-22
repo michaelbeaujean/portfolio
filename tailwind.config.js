@@ -53,7 +53,11 @@ module.exports = {
 			},
 			minWidth: {
 				'516': '516px',
-			}
+			},
+			flexShrink: {
+				DEFAULT: '1',
+				0: '0',
+			},
 		},
 	},
 	variants: {
