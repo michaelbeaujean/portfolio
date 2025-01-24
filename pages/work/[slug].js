@@ -55,7 +55,7 @@ const Work = ({ workPageData }) => {
 											<div className="flex items-end shrink-0 w-full">
 												&nbsp;
 												(
-												<span className="uppercase text-18px">Visit site</span>
+												<span className="uppercase text-18px leading-1-3">Visit site</span>
 												<img src={externalLinkIcon} width="23" height="23" className="ml-5px mt-[-2px]" />
 												)
 											</div>

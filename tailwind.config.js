@@ -30,6 +30,7 @@ module.exports = {
 			},
 			lineHeight: {
 				'110perc': '110%',
+				'1-3': '1.3',
 			},
 			height: {
 				'screen-minus-header': 'calc(100vh - 108px)',

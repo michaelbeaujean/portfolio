@@ -44,7 +44,7 @@ const WorkItem = (props) => {
 							{stack}
 						</motion.span>
 					</motion.div>
-					<span className="text-24px lg:text-36px relative z-2">{title}</span>
+					<span className="text-18px lg:text-36px relative z-2">{title}</span>
 				</a>
 			</Link>
 		</li>

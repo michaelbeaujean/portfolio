@@ -9,7 +9,7 @@ const About = () => {
 	} = about;
 
 	const renderBio = (paragraph, i) => {
-		return <p key={i} className="text-lg leading-tight tracking-tight antialiased mb-4">{paragraph}</p>
+		return <p key={i} className="text-lg leading-tight tracking-tight antialiased mb-4" dangerouslySetInnerHTML={{ __html: paragraph }} />
 	};
 
 	return (
