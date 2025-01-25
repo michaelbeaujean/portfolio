@@ -19,7 +19,7 @@ export const about = {
 	bio: [
 		'Michael Beaujean is a web developer and creative technologist based in New York City. For over 10 years, he\'s worked with global brands, creative agencies and startups to plan, build and launch elegant, engaging experiences on the web.',
 		'As a creative collaborator, Michael believes that being a functional part of a team is just as important as any individual\'s technical skillset. Constantly striving to grow and learn, he makes it a point to research, learn and experiment with the latest in web design and development.',
-		'When not working, Mike enjoys spending time with his partner <a href="https://www.wendystrauss.com/" target="_blank" rel="noopener noreferrer">Wendy Strauss</a> and their Scottish Terrier <a href="https://instagram.com/babsthescottie" target="_blank" rel="noopener noreferrer">Babs</a>, working on various music projects and going on fresh air hikes.',
+		'When not working, Michael enjoys spending time with his partner <a href="https://www.wendystrauss.com/" target="_blank" rel="noopener noreferrer">Wendy Strauss</a> and their Scottish Terrier <a href="https://instagram.com/babsthescottie" target="_blank" rel="noopener noreferrer">Babs</a>, working on various music projects and going on fresh air hikes.',
 	],
 };
 
