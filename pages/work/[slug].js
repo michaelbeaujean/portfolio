@@ -49,7 +49,7 @@ const Work = ({ workPageData }) => {
 						<div className="flex flex-col items-start">
 							<h2 className={`flex flex-col font-semibold uppercase text-24px tracking-tight leading-tight antialiased ${!link && 'mb-10px'}`}>
 								<div className="flex items-end">
-									<span className="shrink-0">{title}</span>
+									{title}
 								</div>
 								<UnderlineHover />
 							</h2>
