@@ -47,7 +47,7 @@ const Work = ({ workPageData }) => {
 						wrapper={children => <a href={link} target="_blank" rel="noopener" className="group inline-block">{children}</a>}
 					>
 						<div className="flex flex-col items-start">
-							<h2 className="flex flex-col font-semibold uppercase text-24px tracking-tight leading-tight antialiased">
+							<h2 className={`flex flex-col font-semibold uppercase text-24px tracking-tight leading-tight antialiased ${!link && 'mb-10px'}`}>
 								<div className="flex items-end">
 									<span className="shrink-0">{title}</span>
 								</div>
@@ -74,7 +74,7 @@ const Work = ({ workPageData }) => {
 						</div>
 						<Link href="/#work">
 							<div className="flex items-start">
-								<a className="inline-block shrink group font-semibold uppercase text-18px tracking-tight leading-tight antialiased group cursor-pointer">
+								<a className="inline-block shrink group font-semibold uppercase tracking-tight leading-tight antialiased group cursor-pointer">
 									See more work
 									<UnderlineHover />
 								</a>

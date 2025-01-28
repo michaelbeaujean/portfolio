@@ -65,18 +65,6 @@ export const workPages = [
 		vimeoId: '682556605',
 	},
 	{
-		slug: 'xq-institute',
-		title: 'The XQ Institute',
-		stack: 'Gatsby.js, WordPress',
-		description: [
-			'A static site generated with Gatsby.js and Wordpress as a CMS.',
-			'Nominated for a 2021 Webby Award in <a href="https://winners.webbyawards.com/winners/websites-and-mobile-sites/general-websites-and-mobile-sites/government-civil-innovation?years=0" target="_blank" rel="noopener">Websites and Mobile Sites - Government & Civil Innovation</a>.',
-			'Created and developed by <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
-		],
-		link: 'https://xqsuperschool.org',
-		vimeoId: '682556652',
-	},
-	{
 		slug: 'creative-ecosystems',
 		title: 'Creative Ecosystems',
 		stack: 'JavaScript, CSS, WordPress',
@@ -98,6 +86,17 @@ export const workPages = [
 		],
 		link: 'https://readingsuccess.amplify.com/',
 		vimeoId: '1049362391',
+	},
+	{
+		slug: 'xq-institute',
+		title: 'The XQ Institute',
+		stack: 'Gatsby.js, WordPress',
+		description: [
+			'A static site generated with Gatsby.js and Wordpress as a CMS.',
+			'Nominated for a 2021 Webby Award in <a href="https://winners.webbyawards.com/winners/websites-and-mobile-sites/general-websites-and-mobile-sites/government-civil-innovation?years=0" target="_blank" rel="noopener">Websites and Mobile Sites - Government & Civil Innovation</a>.',
+			'Created and developed by <a href="https://athleticsnyc.com" target="_blank" rel="noopener">Athletics</a>.',
+		],
+		vimeoId: '682556652',
 	},
 	{
 		slug: 'ofi-future-of-global-equity',
