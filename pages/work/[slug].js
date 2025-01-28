@@ -46,26 +46,28 @@ const Work = ({ workPageData }) => {
 						condition={link}
 						wrapper={children => <a href={link} target="_blank" rel="noopener" className="group inline-block">{children}</a>}
 					>
-						<div className="flex flex-col items-start mb-4">
+						<div className="flex flex-col items-start">
 							<h2 className="flex flex-col font-semibold uppercase text-24px tracking-tight leading-tight antialiased">
 								<div className="flex items-end">
 									<span className="shrink-0">{title}</span>
-									{link && (
-										<>
-											<div className="flex items-end shrink-0 w-full">
-												&nbsp;
-												(
-												<span className="uppercase text-18px leading-1-3">Visit site</span>
-												<img src={externalLinkIcon} width="23" height="23" className="ml-5px mt-[-2px]" />
-												)
-											</div>
-										</>
-									)}
 								</div>
 								<UnderlineHover />
 							</h2>
 						</div>
 					</ConditionalWrapper>
+					{link && (
+						<div>
+							<a href={link} target="_blank" rel="noopener" className="group my-10px font-semibold uppercase text-12px tracking-tight leading-tight antialiased group inline-block">
+								<div className="flex align-center items-start">
+									<div className="inline-block">
+										Visit site
+									</div>
+									<img src={externalLinkIcon} width="23" height="23" className="ml-5px mt-[-2px]" />
+								</div>
+								<UnderlineHover />
+							</a>
+						</div>
+					)}
 					<div className="flex flex-col gap-y-4 mb-4">
 						<div className="font-light tracking-tight leading-tight antialiased xl:w-1/2">
 							{description.map((descItem, i) => <p dangerouslySetInnerHTML={{ __html: descItem }} key={i} />)}
@@ -86,24 +88,13 @@ const Work = ({ workPageData }) => {
 								className="react-player"
 								playing={true}
 								loop={true}
-								controls={false}
+								controls={true}
 								width='100%'
 								height='100%'
 								muted
 							/>
 						</div>
 					)}
-					{/* <div>
-						<div className="font-light tracking-tight leading-tight antialiased xl:w-1/2">
-							{description.map((descItem, i) => <p dangerouslySetInnerHTML={{ __html: descItem }} key={i} className="mb-15px last:mb-0" />)}
-						</div>
-						<Link href="/#work">
-							<a className="inline-block group mt-15px font-semibold uppercase text-18px tracking-tight leading-tight antialiased group">
-								See more work
-								<UnderlineHover />
-							</a>
-						</Link>
-					</div> */}
 				</div>
 				<Sticker color="mint" width="1/6" height="2/6" pos="end" className="hidden md:block" />
 			</div>

@@ -39,6 +39,7 @@ module.exports = {
 				'0': 0,
 				'3px': remCalc(3),
 				'5px': remCalc(5),
+				'10px': remCalc(10),
 				'15px': remCalc(15),
 				'20px': remCalc(20),
 				'25px': remCalc(25),
